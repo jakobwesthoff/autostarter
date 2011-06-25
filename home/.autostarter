@@ -1,0 +1,24 @@
+##
+# Example configuration for autostarter
+##
+
+HORIZONTAL_WORKSPACES="3"
+VERTICAL_WORKSPACES="3"
+
+3840x1200() {
+    workspace 0
+    run xchat
+    position 0 0 1920 1200
+
+    workspace 0
+    run thunderbird
+    position 1920 0 1920 1200
+
+    workspace 1
+    run gnome-terminal
+    position 1920 0 1920 1200
+
+    workspace 1
+    run firefox
+    position 0 0 1920 1200
+}
